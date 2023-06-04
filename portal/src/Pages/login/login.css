@@ -1,0 +1,115 @@
+.main {
+  width: 100vw;
+  height: 100vh;
+}
+.main_nav {
+  width: 100%;
+  height: 7%;
+  display: flex;
+  justify-content: flex-start;
+  background-image: linear-gradient(
+    90deg,
+    rgb(81, 81, 128),
+    rgb(128, 128, 190),
+    rgb(21, 21, 211),
+    rgb(242, 237, 237)
+  );
+  color: white;
+}
+.head_nav {
+  margin-top: 7px;
+  margin-left: 20px;
+}
+.main_ctn {
+  width: 100%;
+  height: 93%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: aqua;
+  gap: 10px;
+}
+
+.form_main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.email_input,
+.password_input {
+  width: 350px;
+  height: 30px;
+  border: none;
+  border-bottom: 1px solid black;
+}
+.email_input:hover,
+.email_input:focus,
+.password_input:hover,
+.password_input:focus {
+  border: 3px solid orange;
+}
+.submit_btn {
+  width: 100px;
+  height: 30px;
+  border: none;
+}
+.submit_btn:hover,
+.submit_btn:focus {
+  background-image: linear-gradient(
+    45deg,
+    white,
+    rgb(234, 225, 225),
+    rgb(255, 247, 247),
+    lightgrey,
+    grey
+  );
+  color: black;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 700px) {
+  .main_nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .head_nav {
+    position: relative;
+    bottom: 7px;
+  }
+  .email_input,
+  .password_input {
+    width: 300px;
+    height: 50px;
+    border: none;
+    border-bottom: 1px solid black;
+  }
+  .email_input::placeholder,
+  .password_input::placeholder {
+    font-size: 24px;
+    position: relative;
+    top: 4px;
+    left: 20px;
+  }
+  .submit_btn {
+    height: 50px;
+    width: 200px;
+    font-size: 26px;
+  }
+  .submit_btn:hover,
+  .submit_btn:focus {
+    background-image: linear-gradient(
+      45deg,
+      white,
+      rgb(234, 225, 225),
+      rgb(255, 247, 247),
+      lightgrey,
+      grey
+    );
+    color: black;
+    font-weight: bold;
+  }
+}
